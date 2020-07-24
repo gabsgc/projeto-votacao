@@ -52,8 +52,7 @@ h1 {
 }
 
 div#candidatos {
-    height: 600px;
-    padding-top: 120px;
+    padding: 120px 0px 120px 0px;
 }
 
 figcaption {
@@ -64,59 +63,27 @@ figcaption {
 
 /*Formatação da Urna*/
 div#urna-votacao {
-    padding-bottom: 2em;
-}
-
-div.urna {
-    width: 900px;
-    height: 300px;
-    border: 2px #610B5E solid;
-    border-radius: 10px;
-    margin-left: 100px;
+    padding: 0px 0px 120px 0px;
 }
 
 div.tela-urna {
-    width: 600px;
     text-align: center;
-    float: left;
-}
-
-div.tela-urna p{
     font-size: 15pt;
+    border-radius: 10px;
+    padding-bottom: 1em;
 }
 
 div.teclado {
-    width: 250px;
-    height: 280px;
-    float: left;
     text-align: center;
     background-color: #cecece;
-    padding-right: 10px;
-    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px #610B5E solid;
 }
 
-.teclas{
+div.teclado button{
     margin: 10px;
-    background-color: black;
-    color: #ffffff;
-    border-radius: 5px;
-    height: 40px;
-    width: 80px;
 }
-button.laranja{
-    background-color: #FF8000;
-    border-radius: 5px;
-}
-
-button.verde {
-    background-color: #088A08;
-    border-radius: 5px;
-}
-
-.btn-resultado {
-    margin-left: 380px;
-}
-
+/*Fim da formatação da Urna */
 div.resultados {
     margin-top: 50px;
     margin-bottom: 70px;
@@ -128,11 +95,12 @@ div.resultados p {
     font-family: sans-serif;
 }
 
-
-/*Fim da formatação da Urna */
 footer {
-    height: 100px;
+    height: 50%;
     background-color: black;
+}
+
+footer h5 {
     color: #ffffff;
     padding-top: 15px;
     text-align: center;

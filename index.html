@@ -69,45 +69,42 @@
         <div id="urna-votacao">
             <h1>Vote Agora</h1>
             <p class="text-muted text-center">Digite o número do seu candidato e aperte confirma</p>
-            <div class="urna">
-                <div class="tela-urna">
-                    <img id="perfil">
+            <div class="row">
+                <div class="col-lg-5 col-md-4 col-sm-8 tela-urna">
                     <p>Número:</p>
                     <form name="votacao">
                         <input size="1" id="campo" value="" maxlength="1" type="text" readonly="readonly" />
                     </form>
                 </div>
-                <div class="teclado">
+                <div class="col-lg-5 col-md-4 col-sm-8 teclado">
                     <h2>Justiça Eleitoral</h2>
-                    <button class="teclas" onclick="inserir(1)">1</button>
-                    <button class="teclas" onclick="inserir(2)">2</button>
-                    <button class="teclas" onclick="inserir(3)">3</button>
-                    <button class="teclas" onclick="inserir(4)">4</button>
-                    <button class="teclas" onclick="inserir(5)">Nulo</button>
-                    <button class="teclas" onclick="inserir(6)">Branco</button>
+                    <button class="btn btn-dark btn-lg" onclick="inserir(1)">1</button>
+                    <button class="btn btn-dark btn-lg" onclick="inserir(2)">2</button>
+                    <button class="btn btn-dark btn-lg" onclick="inserir(3)">3</button>
+                    <button class="btn btn-dark btn-lg" onclick="inserir(4)">4</button>
+                    <button class="btn btn-dark btn-lg" onclick="inserir(5)">Nulo</button>
+                    <button class="btn btn-dark btn-lg" onclick="inserir(6)">Branco</button>
                     <div>
-                        <button class="laranja" onclick="corrige()">CORRIGE</button>
-                        <button class="verde" onclick="votar()">CONFIRMA</button>
+                        <button class="btn btn-warning btn-lg" onclick="corrige()">CORRIGE</button>
+                        <button class="btn btn-success btn-lg" onclick="votar()">CONFIRMA</button>
                     </div>
                 </div>
             </div>
-            <a href="resultado.html"><button type="button" class="btn-resultado" onclick="resultado();">Resultado</button></a>
-            <a href="#candidatos"><button type="button" class="btn-inicio">Candidatos</button></a>
-
-            <div>
-                <p class="float-right pb-3">
-                    <a href=""><i class="fa fa-arrow-circle-up fa-2x" aria-hidden="true"></i>
-                    </svg></a>
-                </p>
+            <div class="row" style="margin-left: 10%;">
+                <div class="col-lg-5 col-md-4 col-sm-8">
+                    <a href="resultado.html"><button type="button" class="btn-resultado" onclick="resultado();">Resultado</button></a>
+                </div>
+                <div class="col-lg-5 col-md-4 col-sm-8 ">
+                    <a href="#candidatos"><button type="button" class="btn-inicio">Candidatos</button></a>
+                </div>
             </div>
         </div>
-        <footer>
-            <h4>&copy Prefeitura Municipal de Dallas - Eleições 2020</h4>
-            <h4>Desenvolvido por Gabriela Garcia e Wallas Curty</h4>
-        </footer>
-    
     </div>
-    
+
+    <footer>
+        <h5>&copy Prefeitura Municipal de Dallas - Eleições 2020</h5>
+        <h5>Desenvolvido por Gabriela Garcia e Wallas Curty</h5>
+    </footer>
    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
