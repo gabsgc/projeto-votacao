@@ -12,34 +12,82 @@
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <!--Font Awesome-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
+
+<body onload="resultado()">
     <header>
-        <h1>Prefeitura Municipal de Dallas</h1>
+        <h1>Eleições 2020 - Prefeitura Municipal de Dallas</h1>
     </header>
 
-    <div class="container">
-        <div class="resultados">
-            <p id="resultado"></p>
-            <p id="resultado1"></p>
-            <p id="resultado2"></p>
-            <p id="resultado3"></p>
-            <p id="resultado4"></p>
-            <p id="resultado5"></p>
-            <p id="resultado6"></p>
-            <p id="resultado7"></p>
-        </div>
+    <div class="container mt-5">
+        <table class="table table-bordered">
+            <thead class="thead-dark">
+                <tr class="text-center">
+                    <th scope="col">#</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Votos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-light">
+                    <th scope="row">1</th>
+                    <td>Afonso</td>
+                    <td><p id="c1">
+                    </p></td>
+                </tr>
+                <tr class="bg-light">
+                    <th scope="row">2</th>
+                    <td>Cezar</td>
+                    <td><p id="c2"></p></td>
+                </tr>
+                <tr class="bg-light">
+                    <th scope="row">3</th>
+                    <td>Fernanda</td>
+                    <td><p id="c3"></p></td>
+                </tr>
+                <tr class="bg-light">
+                    <th scope="row">4</th>
+                    <td>Mariana</td>
+                    <td><p id="c4"></p></td>
+                </tr>
+                <tr class="bg-danger text-white">
+                    <th scope="row">5</th>
+                    <td>Nulos</td>
+                    <td><p id="nulo"></p></td>
+                </tr>
+                <tr class="bg-light">
+                    <th scope="row">6</th>
+                    <td>Brancos</td>
+                    <td><p id="branco"></p></td>
+                </tr>
+                <tr class="bg-primary text-white">
+                    <th scope="row">7</th>
+                    <td>Total</td>
+                    <td><p id="total"></p></td>
+
+                </tr>
+                <tr class="bg-warning">
+                    <th scope="row">8</th>
+                    <td>Percentual de votos brancos e nulos</td>
+                    <td><p id="percentual"></p></td>
+                </tr>
+            </tbody>
+        </table>
+
     </div>
 
-    <footer>
+
+    <div class="d-flex justify-content-center mb-5">
+        <a href="index.html"><button type="button" class="btn-inicio">Sair</button></a>
+    </div>
+
+
+    <footer class="text-center text-white pb-4 pt-4">
         <h4>&copy Prefeitura Municipal de Dallas - Eleições 2020</h4>
         <h4>Desenvolvido por Gabriela Garcia e Wallas Curty</h4>
     </footer>
-    
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -51,4 +99,5 @@
         crossorigin="anonymous"></script>
     <script src="js/index.js" type="text/javascript"></script>
 </body>
+
 </html>

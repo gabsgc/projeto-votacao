@@ -84,16 +84,6 @@ div.teclado button{
     margin: 10px;
 }
 /*Fim da formatação da Urna */
-div.resultados {
-    margin-top: 50px;
-    margin-bottom: 70px;
-}
-
-div.resultados p {
-    font-size: 15pt;
-    text-align: center;
-    font-family: sans-serif;
-}
 
 footer {
     height: 50%;
