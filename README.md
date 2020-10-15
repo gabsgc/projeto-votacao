@@ -1,7 +1,7 @@
 # Eleições 2020 - Prefeitura de Dallas
 Projeto Votação desenvolvido para a Prova 2 da disciplina de Laboratório de Programação de Web Sites.
 
-# :computer: Technologies
+# :computer: Tecnologias
 Este projeto foi desenvolvido utilizando as tecnologias:
 
 - Bootstrap
